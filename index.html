@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Registeration Form</title>
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/poppings"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h1 id="class">
+          Learn to code by <br />
+          watching others
+        </h1>
+        <!-- <h1></h1> -->
+
+        <p>
+          See how experienced developers solve problems in real-time. <br />
+          Watching scripted tutorials is great, but understanding how developers
+          thinks is invaluable.
+        </p>
+      </div>
+
+      <div class="right">
+        <button class="right-top">
+          <strong>Try it free 7days</strong> then $20/mo. thereafter
+        </button>
+
+        <form action="">
+          <div class="data" data-error="Firstname cannot be empty">
+            <input id="right" type="text" placeholder="Firstname" required />
+          </div>
+
+          <div class="error" data-error="Firstname cannot be empty"></div>
+
+          <div class="data" data-error="Lastname cannot be empty">
+            <input id="right" type="text" placeholder="Lastname" required />
+          </div>
+
+          <div class="data" data-error="Looks like this is not an email">
+            <input id="right" type="email" required placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" autocomplete="none">
+          </div>
+
+          <div class="data" data-error="Password cannot be empty">
+            <input id="right" type="password" placeholder="Password" required />
+          </div>
+
+          <div>
+            <button type="submit" class="right-bottom">
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </div>
+
+          <h6>
+            By clicking the button you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </h6>
+        </form>
+      </div>
+    </main>
+
+    <!-- <script>
+      document.querySelectorAll('.data[data-error] #right').forEach(inpEl => {
+        inpEl.addEventListener('input', ()=> inpEl.parentElement.removeAttribute('data-error'));
+
+        inpEl.addEventListener('focus',(e)=> {
+          if (e.target.value===''){
+            addAttr
+          }
+        })
+
+        
+      });
+    </script> -->
+  </body>
+</html>
